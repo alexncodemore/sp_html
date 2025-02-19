@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+    <title>Registration Form</title>
+</head>
+<body style="background-color: antiquewhite;border-radius: 4px;">
+    <center>
+        <div style="background-color: rgb(120, 210, 228);border-radius: 4px;">
+            <h1>Registration Form</h1>
+            <p>Please fill in this form to create an account.</p>
+            <form form action="form2.html" method="post">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="date">Date of Birth:</label><br>
+                <input type="date" id="date" name="date"><br>
+                male:<input type="radio" id="gender" name="gender"><br>
+                female:<input type="radio" id="gender" name="gender"><br>
+                others:<input type="radio" id="gender" name="gender"><br>
+                <label for="contact">Contact:</label><br>
+                <input type="tel" id="contact" name="contact" max="10"><br>
+                <label for="city">City:</label><br>
+                <input type="text" name="city" list="city"><br>
+                <datalist id="city">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Nashik">Nashik</option>
+                </datalist><br> 
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <!-- <input type="submit" value="Submit">-->
+                <button onclick="alert('Form Submitted')">Submit</button>
+                <button onclick="alert('Form Reset')" type="reset" value="Reset">Reset</button>
+            </form> 
+        </div>
+   </center>
+
+</body>
+</html>
